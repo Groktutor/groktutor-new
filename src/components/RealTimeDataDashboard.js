@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { fetchDataWithCache, realTimeService } from '../services/dataService';
-import { useNavigation } from '../services/navigationService';
 
 const RealTimeDataDashboard = () => {
   const [activeTab, setActiveTab] = useState('reddit');

@@ -2,8 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { BrowserRouter as Router, Routes, Route, Link, useParams, useNavigate, useLocation } from 'react-router-dom';
 import { fetchDataWithCache, realTimeService } from './services/dataService';
 import { useNavigation } from './services/navigationService';
-import TrendingVoxelVisualization from './components/TrendingVoxelVisualization';
-import RealTimeDataDashboard from './components/RealTimeDataDashboard';
 
 // Main App Component
 function App() {
@@ -1337,11 +1335,12 @@ function Footer() {
           
           <div className="footer-column">
             <h3>LLM Models</h3>
-            <a href="#" className="footer-link">Claude 3</a>
-            <a href="#" className="footer-link">GPT-4 Turbo</a>
-            <a href="#" className="footer-link">Gemini Pro</a>
-            <a href="#" className="footer-link">Llama 3</a>
-            <a href="#" className="footer-link">Mistral 8x7B</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/contact">Contact</a>
+            <a href="/pricing">Pricing</a>
+            <a href="/support">Support</a>
+            <a href="/terms">Terms</a>
           </div>
           
           <div className="footer-column">
