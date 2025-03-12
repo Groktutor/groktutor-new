@@ -1,9 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { fetchDataWithCache, realTimeService } from '../services/dataService';
-import { useNavigation } from '../services/navigationService';
 
 const TrendingVoxelVisualization = () => {
-  const [trendingData, setTrendingData] = useState([
+  const [trendingData] = useState([
     { technique: 'Chain-of-Thought', popularity: 90, growth: 18, color: '#00ffff' },
     { technique: 'Tree-of-Thought', popularity: 75, growth: 42, color: '#ff00ff' },
     { technique: 'ReAct', popularity: 85, growth: 28, color: '#0fff0f' },
